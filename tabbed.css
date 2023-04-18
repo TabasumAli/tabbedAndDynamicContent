@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* button{
+    outline: none !important;
+    border: none !important;
+} */
+
+button:hover{
+    color: white !important;
+    background-color: black !important;
+    outline: none !important;
+    border: none !important;
+}
+
+.btn-tabs{
+    position: relative;
+    border-radius: 12px;
+}
+
+.contents{
+    border-radius: 12px;
+}
+
+.content{
+    display: none;
+    animation: moving 0.5s ease;
+}
+@keyframes moving{
+    from {transform: translateX(50px); opacity: 0;}
+    to{transform: translateX(0px); opacity: 1;}
+}
+
+.content.active{
+    display: block;
+}
+
+.line{
+    position: absolute;
+    top: 68px;
+    left: 178px;
+    width: 74px;
+    height: 5px;
+    background-color: crimson;
+}
